@@ -4,7 +4,13 @@ Simple **Express** package for authorization handlers, using JWT and Typescript
 
 ### Getting Started
 
-1. add environment variables to .env
+1. Install dep
+
+```
+yarn add @ogabrielaraujo/guard
+```
+
+2. add environment variables to .env
 
 ```bash
 GUARD_SIGNATURE="secret"
@@ -12,9 +18,9 @@ GUARD_ALGORITHM="HS512"
 GUARD_EXPIRESIN="30d"
 ```
 
-2.  change signature secret to a safe value
+3.  change signature secret to a safe value
 
-3.  import guard
+4.  import guard
 
 ```js
 import { guard } from '@ogabrielaraujo/guard'
