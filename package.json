@@ -1,5 +1,5 @@
 {
-  "name": "@ogabrielaraujo/guard",
+  "name": "guard",
   "version": "1.0.0",
   "main": "dist/index.js",
   "license": "ISC",
