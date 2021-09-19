@@ -1,9 +1,13 @@
 {
-  "name": "guard",
+  "name": "@ogabrielaraujo/guard",
   "version": "1.0.0",
   "main": "dist/index.js",
   "license": "ISC",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify index.ts",
     "build": "rm -rf dist && tsc"
