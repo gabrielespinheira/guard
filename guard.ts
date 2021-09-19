@@ -39,7 +39,8 @@ export const guard = function (
       throw new Error('Token not valid')
     }
 
-    req.token = isValidToken
+    req.token = token
+    req.payload = isValidToken
     req.user_email = isValidToken.email
 
     next()

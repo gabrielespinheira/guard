@@ -36,6 +36,7 @@ app.use(guard)
 
 app.get('/', (req, res) => {
   console.log(req.token)
+  console.log(req.payload)
   console.log(req.user_email)
   res.json({ status: true })
 })

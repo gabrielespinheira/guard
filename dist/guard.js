@@ -35,7 +35,8 @@ var guard = function (req, res, next) {
         if (!isValidToken) {
             throw new Error('Token not valid');
         }
-        req.token = isValidToken;
+        req.token = token;
+        req.payload = isValidToken;
         req.user_email = isValidToken.email;
         next();
     }
